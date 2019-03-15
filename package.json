@@ -47,10 +47,12 @@
     "stylelint-processor-html": "1.0.0"
   },
   "dependencies": {
+    "bower": "^1.8.8",
     "cheerio": "1.0.0-rc.2",
     "express-interceptor": "1.2.0",
     "express-redirect": "1.2.2",
     "npm-run-all": "4.0.2",
-    "sitemap": "2.1.0"
+    "sitemap": "2.1.0",
+    "yarn": "^1.13.0"
   }
 }

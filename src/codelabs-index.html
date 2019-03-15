@@ -111,8 +111,9 @@
         height: 100%;
         overflow: hidden;
         padding: 0 10px 10px;
-        position: relative;
+       
         width: 100%;
+        text-align: center;
       }
 
       .intro h1 {
@@ -122,6 +123,7 @@
 
       .intro p {
         max-width: 620px;
+        text-align: center;
       }
 
       .intro a {
@@ -196,7 +198,8 @@
       }
 
       .event-logo {
-        min-width: 200px;
+        max-height: 50px;
+        max-width: 50px;
       }
 
       .event-description {
@@ -281,7 +284,7 @@
       <div>
         <template is="dom-if" if="{{currentEvent.id}}">
           <header class="horizontal layout event-wrapper">
-            <img class="event-logo" src="/images/events/{{currentEvent.logo}}" />
+            <img class="event-logo" src="{{currentEvent.logo}}" height="50" width="50"/>
             <div class="event-description">
               <h1>{{currentEvent.name}}</h1>
               <p>{{currentEvent.description}}</p>
@@ -290,18 +293,7 @@
         </template>
         <div class="content">
           <div class="wrap intro">
-            <h1>Do more with Ubuntu!</h1>
-            <p>Ubuntu Tutorials are project-based, step-by-step guides to 
-              doing amazing things with Ubuntu. From installing the OS in 
-              the first place to packaging your first snap, we're here to
-              help you on your way.</p>
-            <p>This site is open source and open to contributions from the
-              Linux community, if you have a knack for writing and sharing
-              your knowledge, you can <a href="/tutorial/tutorial-guidelines">
-                read our guide</a> to get started.</p>
-            <p>If you'd like to see a tutorial written on a specific topic,
-              <a href='https://github.com/canonical-websites/tutorials.ubuntu.com/issues?q=is%3Aopen+is%3Aissue+label%3A"Type%3A+Tutorial+Request"' class="external">
-                let us know</a>.</p>
+            <h1>EduBlocks Learning Portal</h1>
 
             <div>
               <label class="accessibility-aid" for="edit-keys" hidden="hidden">Search</label>
@@ -347,19 +339,9 @@
           </div>
         </div>
         <footer class="footer">
-          <p>© 2018 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+          <p>EduBlocks Learning Portal. A fork of Ubuntu Tutorials. EduBlocks is not affiliated with Ubutnu or Canonical.</p>
           <nav class="footer__nav">
-            <ul class="footer__links">
-              <li class="footer__item">
-                <a class="footer__link" href="https://www.ubuntu.com/legal">Legal Information</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy">Cookie policy</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="https://github.com/canonical-websites/tutorials.ubuntu.com/issues/new">Report a bug on this site</a>
-              </li>
-            </ul>
+            
           </nav>
         </footer>
       </div>
